@@ -1,5 +1,13 @@
-import PackageDescription
 
 let package = Package(
-    name: "swiftstats"
+  name: "SwiftStats",
+  products: [
+    .library(name: "SwiftStats", targets: ["SwiftStats"])
+  ],
+  targets: [
+    .target(name: "SwiftStats"),
+    .testTarget(name: "SwiftStatsTests", dependencies: [
+      "SwiftStatsTest",
+    ]),
+  ]
 )
