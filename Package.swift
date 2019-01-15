@@ -9,7 +9,7 @@ let package = Package(
   targets: [
     .target(name: "SwiftStats"),
     .testTarget(name: "SwiftStatsTests", dependencies: [
-      "SwiftStatsTest",
+      "SwiftStats",
     ]),
   ]
 )
