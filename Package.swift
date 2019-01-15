@@ -7,9 +7,7 @@ let package = Package(
     .library(name: "SwiftStats", targets: ["SwiftStats"])
   ],
   targets: [
-    .target(name: "SwiftStats"),
-    .testTarget(name: "SwiftStatsTests", dependencies: [
-      "SwiftStats",
-    ]),
+    .target(name: "SwiftStats", path: "SwiftStats"),
+    .testTarget(name: "SwiftStatsTests", dependencies: ["SwiftStats"], path: "SwiftStatsTests"),
   ]
 )
